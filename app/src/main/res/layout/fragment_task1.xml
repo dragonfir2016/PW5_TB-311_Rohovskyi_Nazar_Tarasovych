@@ -1,0 +1,45 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/elementSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/addElementButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Додати елемент"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/selectedElementsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вибрані елементи відобразяться тут"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/calculateReliabilityButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Розрахувати надійність"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/resultsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Результати відобразяться тут"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

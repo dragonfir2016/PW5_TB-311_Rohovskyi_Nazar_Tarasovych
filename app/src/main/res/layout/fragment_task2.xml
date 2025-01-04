@@ -1,0 +1,47 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/elementSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputAccidentCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Питомі збитки від аварійного вимкнення (грн/кВт·год)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputPlannedCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Питомі збитки від планового вимкнення (грн/кВт·год)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Розрахувати збитки"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/resultsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Результати відобразяться тут"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>
